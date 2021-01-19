@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous">
+    {% load static %}
+    <link rel="stylesheet" href="{% static "css/obuwie-meskie.css" %}">
+    <link rel="stylesheet" href="{% static "css/dane1.css" %}">
+<title>O Rety!</title>
+
+</head>
+<body>
+	<nav class="navbar navbar-expand-md position-sticky" id="navBar">
+
+		<a class="navbar-brand text-center" href="/home"><ul>
+				<li>O Rety!</li>
+				<li class="small text-center">Buty i Skarpety</li>
+			</ul></a>
+		<button class="navbar-toggler navbar-light toglerikona" type="button"
+			data-toggle="collapse" data-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false"
+			id="togglebutt" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div
+			class="collapse navbar-collapse justify-content-start collapsednavbarcss"
+			id="navbarSupportedContent">
+			<div>
+				<a href="/obuwie-{{ listamenugorne.0.lower}}">
+					<button type="button" class="btn btn-sm przyciskinavbar"
+						>{{listamenugorne.0}}</button>
+				</a>
+			</div>
+			<div>
+				<a href="/obuwie-{{ listamenugorne.1.lower }}">
+					<button type="button" class="btn btn-sm przyciskinavbar"
+						>{{listamenugorne.1}}</button>
+				</a>
+			</div>
+			<div>
+				<a href="/obuwie-{{ listamenugorne.2.lower }}">
+					<button type="button" class="btn btn-sm przyciskinavbar"
+						>{{ listamenugorne.2}}</button>
+				</a>
+			</div>
+			<div class="szukajcss" id="szukajcss">
+				<input class="form-control mr-sm-0 input szukajform" id="szukajform"
+					data-ref="input-search" type="search" placeholder="Szukaj"
+					aria-label="Search">
+			</div>
+
+			<div class="logowaniecss" id="logowaniecss" style="padding-left:75px">
+                {% if not user.is_authenticated %}
+				<a href="/login">
+					<button type="button" class="btn btn-sm logowanieprzycisk">
+						<span class="fas fa-user"></span> <span></span>
+					</button>
+				</a>
+                {% endif %}
+                {% if user.is_authenticated %}
+				<form action="/logout/" method="post">
+                {% csrf_token %}
+					<div class="btn-group">
+						<button type="button" class="btn  btn-sm logowanieprzycisk"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<span class="fas fa-user"></span> <span></span>
+						</button>
+						<div class="dropdown-menu" style="margin-left: -65px; margin-top: 13px">
+							<a class="dropdown-item text-center" href="/zakupy/">Moje Zakupy</a>
+                            {% if user.is_superuser %}
+							<a class="dropdown-item text-center" href="/admin/">
+                               Panel Admina</a>
+                                {% endif %}
+							<button class="dropdown-item text-center" type="submit"
+								value="Sign Out">Wyloguj</button>
+
+						</div>
+					</div>
+				</form>
+                {% endif %}
+
+
+
+
+			</div>
+
+{#			<div class="koszykcss" id="koszykcss">#}
+{#				<button type="button" class="btn btn-sm przyciskkoszyk" style="">#}
+{#					<a data-toggle="modal" data-target="#myModal"> <i#}
+{#						class="fas fa-cart-arrow-down"> <span#}
+{#							class="badge badge-pill badge-dark simpleCart_quantity"> </span>#}
+{#					</i>#}
+{#					</a>#}
+{#				</button>#}
+{#			</div>#}
+		</div>
+
+
+
+
+	</nav>
+
+
+	<div class="container">
+		<div class="col-9 offset-1">
+
+			<div class="card-header text-center">
+				<h3>Twoje Zamówienia</h3>
+			</div>
+		</div>
+
+		<table class="table" style="width: 100%">
+			<thead class="thead-dark">
+				<tr>
+					<th scope="col">Nr. zamowienia</th>
+					<th scope="col">Status zamowienia</th>
+					<th scope="col">Dostawa i platnosc</th>
+					<th scope="col">Wartosc</th>
+				</tr>
+			</thead>
+			<tbody>
+                {% for zakup in lista %}
+				<tr>
+					<td>{{ zakup.id_zakup }}</td>
+					<td>{{zakup.status_zamowienia}}</td>
+					<td>kurier - platnosc online</td>
+					<td>{{zakup.calkowitawartosc}}.0 PLN</td>
+				</tr>
+                {% endfor %}
+			</tbody>
+		</table>
+
+
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+	<script
+		src="http://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script
+		src="http://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+	<script src="{% static "js/simpleCart.js" %}"></script>
+	<script
+		src="{% static "mixitup-v3/patrickkunka-mixitup-61dac05/dist/mixitup.min.js" %}"></script>
+	<script src="{% static "js/obuwie.js" %}"></script
+
+</body>
+</html>

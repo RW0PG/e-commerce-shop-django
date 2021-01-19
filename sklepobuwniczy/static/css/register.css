@@ -1,0 +1,92 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Numans');
+
+html,body{
+background-image: url('/images/loginback.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+height: 100%;
+font-family: 'Numans', sans-serif;
+}
+.float_center {
+  float: right;
+
+  position: relative;
+  left: -50%; /* or right 50% */
+  text-align: left;
+}
+.container{
+height: 100%;
+align-content: center;
+}
+.warning{
+	font-size:14px;
+	color:white;
+	margin-bottom: -15px;
+}
+.card{
+margin-top: auto;i
+margin-bottom: auto;
+background-color: rgba(0,0,0,0.5) !important;
+}
+
+
+.card-header h3{
+color: white;
+font-weight:800;
+}
+
+
+.input-group-prepend span{
+width: 150px;
+background-color: #ff1d12;
+color: black;
+border:0 !important;
+}
+
+input:focus{
+outline: 0 0 0 0  !important;
+box-shadow: 0 0 0 0 !important;
+
+}
+
+.remember{
+color: white;
+}
+
+.remember input
+{
+width: 20px;
+height: 20px;
+margin-left: 15px;
+margin-right: 5px;
+}
+
+.login_btn{
+color: white;
+background-color: #ff1d12;
+width: 100px;
+font-weight:800;
+}
+
+.login_btn:hover{
+color:black;
+background-color: white;
+}
+
+.links{
+color: white;
+}
+
+.links a{
+margin-left: 4px;
+}
+
+.input-group-text1{
+	padding-bottom: 15px;
+	color: red;
+	border:0 !important;
+	background-color: rgba(0,0,0,0.1) !important;
+	
+}

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="identifier123321.sqlite" uuid="da8328c8-1f11-485a-94a5-f8a296606cfa">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:identifier123321.sqlite</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="identifier232.sqlite" uuid="601f7d0e-5f45-42cd-ba4c-0e286a7eef60">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:identifier232.sqlite</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="identifier232.sqlite [2]" uuid="22eef2f3-66d1-4ce1-8d36-4befdd8e9499">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:identifier232.sqlite</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="identifier2323333333.sqlite [3]" uuid="8d0c37ef-91e4-4fb8-9272-6d61b2fc3003">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:identifier2323333333.sqlite</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="identifier232to.sqlite [3]" uuid="114dfb42-c902-4b15-84be-a95648837848">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:identifier232.sqlite</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="data" uuid="ccda9fd3-7107-45b2-ac34-bcfbef467a06">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\Users\Artur\PycharmProjects\mysite\data.sqlite</jdbc-url>
+      <libraries>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/Xerial SQLiteJDBC/3.25.1/license.txt</url>
+        </library>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/Xerial SQLiteJDBC/3.25.1/sqlite-jdbc-3.25.1.jar</url>
+        </library>
+      </libraries>
+    </data-source>
+  </component>
+</project>

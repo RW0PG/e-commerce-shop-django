@@ -1,0 +1,91 @@
+
+
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<title>Rejstracja</title>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous">
+{% load static %}
+<link rel="stylesheet" href="{% static "css/login.css" %}">
+</head>
+<body style="background-image: url('{% static "images/loginback.jpg" %}');
+background-size: cover;
+background-repeat: no-repeat;
+height: 100%;
+font-family: 'Numans', sans-serif;">
+	<div class="container">
+		<div class="d-flex justify-content-center h-100">
+			<div class="card">
+				<div class="card-header text-center">
+					<h3>Rejstracja</h3>
+				</div>
+				<div class="card-body">
+					<form  action="" method="post">
+                        {% csrf_token %}
+						<!-- <div class="input-group form-group">
+							<div class="input-group-prepend">
+								<span class="input-group-text">@Id</span>
+							</div>
+							<input type="text" class="form-control" name="username"
+								placeholder="123" th:field="*{id_kontakt}">
+
+						</div> -->
+{#						<div class="input-group-text1 text-center" th:if="${test1}">#}
+{#           				 			Wypelnij wszystkie pola.#}
+{#        				</div>#}
+						<div class="input-group form-group">
+							<div class="input-group-prepend">
+								<span class="input-group-text">@</span>
+							</div>
+							<input type="text" class="form-control" name="username"
+								placeholder="nazwa uzytkownika">
+						</div>
+
+{#						<div class="input-group-text1 text-center" th:if="${test}">#}
+{#           				 			Nazwa uzytkownika jest juz zajeta.#}
+{#        				</div>#}
+
+
+
+						<div class="input-group form-group">
+							<div class="input-group-prepend">
+								<span class="input-group-text">@</span>
+							</div>
+							<input type="password" class="form-control" name="password1"
+								placeholder="haslo">
+						</div>
+
+                        <div class="input-group form-group">
+							<div class="input-group-prepend">
+								<span class="input-group-text">@</span>
+							</div>
+							<input type="password" class="form-control" name="password2"
+								placeholder="powtorz haslo">
+						</div>
+                        {% if tekst %}
+                        <div class="input-group-text1 text-center" style="color:red">
+           				 			{{ tekst }}
+        				</div>
+                        {% endif %}
+
+						<div class="form-group input-group input-group-prepend"
+							style="padding-top: 25px;">
+							<input type="submit" value="Zarejestruj"
+								class="btn form-control login_btn">
+						</div>
+					</form>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</body>
+</html>

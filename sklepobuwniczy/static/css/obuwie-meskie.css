@@ -1,0 +1,695 @@
+@charset "UTF-8";
+.simpleCart_items img {
+            max-width: 42px;
+            max-height: 42px;
+        }
+
+        .simpleCart_items {
+            overflow: auto;
+        }
+
+        .simpleCart_shelfItem {
+
+        }
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+		.floatingNav {
+			border-radius: 2px;
+			
+			box-shadow: 0px 0px 10px 0px #999;
+		}	
+
+        .przyciskisortowania {
+
+        }
+        .dropdown-item:hover{
+        	background-color: #b6b9be;
+        	
+        }
+        .dropdown-menu{
+        	border-top:0;
+            margin-left: -100px !important;
+        }
+
+        body {
+        	overflow-x:hidden;
+            min-width: 100%;
+            padding: 0;
+            background-color: #ffffff;
+			
+        }
+
+        .szer {
+            width: 100%;
+        }
+
+        .small {
+			margin-top: -8px;
+			color: #aaaaa6;
+			font-size:15px;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        .item {
+            width: 50%;
+        }
+
+
+        .itt {
+            padding: 20px;
+            transition: all .3s;
+            -webkit-transition: all .3s;
+        }
+
+        .itt:hover {
+            transform: scale(1.05);
+            -ms-transform: scale(1.05);
+            -webkit-transform: scale(1.05);
+            box-shadow: 0px 0px 13px #888;
+        }
+
+		
+		.przyciskkoszyk:hover {
+			color:#ff5a00;
+		}
+		
+		.fa-user {
+			font-size:20px;
+			color:red;
+		}
+		.napiswlogowaniu {
+			font-size:27px;
+			color:white;
+		}
+		
+
+		.logowanieprzycisk:hover {
+			color:white;
+		}
+		.logowanieprzycisk:focus {
+			outline: none;
+            box-shadow: none;
+		}
+		.przyciskkoszyk:focus {
+			outline: none;
+            box-shadow: none;
+		}
+
+        .testowa {
+            font-size: 10px;
+        }
+
+        .szerbutton {
+            width: 100%;
+        }
+
+        .btn-primary {
+            background-color: #ff5a00;
+            border-color: #ff5a00;
+        }
+
+        .btn-primary:focus {
+            outline: none;
+            box-shadow: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #9d4100;
+            border-color: #9d4100;
+        }
+
+        .price {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .navbar {
+            border-bottom-color: #dadad6;
+            border-bottom-width: 0px;
+            border-bottom-style: solid;
+			top: 0;
+			z-index:5;
+			padding: 0;
+			background-color: rgba(53, 55, 59, 1);
+
+
+        }
+
+        .navbar-brand {
+            color: black !important;
+            font-size: 20px;
+            font-weight: bold;
+            padding-left: 5px;
+			padding-bottom:0px;
+
+
+        }
+		.navbar-brand:hover{
+			color:#a53a00 !important;
+		}
+		
+
+        .navbar-right {
+            padding-right: 60px;
+        }
+
+        .napisymenuzlewej {
+            color: #676566;
+            font-size: 15px;
+            font-weight: 500;
+            padding-left: 45px;
+            padding-top: 4px;
+
+        }
+
+        .napisymenuzlewej:hover {
+            color: #ff5a00;
+        }
+
+        .tekstsortowanie {
+            font-size: 13px;
+            font-weight: 500;
+            color: #676566;
+            padding-top: 13px;
+        }
+
+        .przyciskisortowania {
+            padding-top: 5px;
+            background-color: #FFFFFF;
+            border: 0;
+            font-size: 13px;
+            font-weight: 500;
+            color: #676566;
+        }
+
+        .przyciskisortowania:hover {
+            background-color: #FFFFFF;
+            border: 0;
+            font-size: 13px;
+            font-weight: 500;
+            color: #FF5A00;
+        }
+
+        .przyciskisortowania:focus {
+            outline: none;
+            box-shadow: none
+        }
+
+        .btn-group-1 {
+            width: 104%;
+            border-bottom-color: #dadad6;
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+            border-top-color: #dadad6;
+            border-top-width: 1px;
+            border-top-style: solid;
+        }
+
+        .btn-group-1:hover {
+            color: #FF5A00 !important;
+            border-color: rgba(255, 90, 0, 0.35);
+        }
+
+        .btn-group-1:focus {
+            outline: none;
+            box-shadow: none;
+            background-color: #cae6f0;
+        }
+
+        .fa-angle-down {
+            font-size: 20px;
+            color: #FF5A00;
+        }
+
+        .fa-angle-up {
+            font-size: 20px;
+            color: #676566;
+        }
+
+        .napisywbocznymmenuwysuwanym {
+            font-size: 16px;
+            color: #676566;
+            padding-bottom: 20px;
+        }
+
+        .asd {
+            padding-right: 15px;
+        }
+        .toglerikona {
+        	outline: none !important;
+            box-shadow: none !important;
+        }
+
+
+        .asdd {
+            padding-right: 14px;
+        }
+		.przyciskinavbar {
+			color:#b6b9be;
+			font-weight:700;
+			font-size:18px;
+			text-align:center;
+			padding-left:10px;
+		}
+		.przyciskmenubocznejaknav {
+			color:#676566;
+			font-weight:400;
+			font-size:18px;
+			text-align:center;
+		}
+		
+		.przyciskmenubocznejaknav:hover {
+			color:#ff5a00;
+		}
+		.przyciskmenubocznejaknav:focus {
+			outline: none !important;
+            box-shadow: none !important;
+		}
+		.przyciskinavbar:hover {
+			color:white;
+		}
+		.collapsednavbarcss{
+			width: 100%;
+			color: white;
+			padding-left:50px;
+		}
+		.szukajcss{
+			width: 50%;
+			padding-left: 25px;
+		}
+		.szukajform{
+			width: 100%;
+		}
+		.koszykcss{
+			padding-left: 40px;
+			padding-right: 0px;
+		}
+		.logowaniecss{
+			padding-left: 45px;
+			width: 10%;
+		}
+		.logowanieprzycisk {
+			color:black!important;
+			font-weight:700;
+			font-size:15px;
+			text-align:center;
+			padding-left:0!important;
+			width: 100%;
+			
+		}
+		.logowanieprzycisk:hover{
+			color:#ff5a00!important;
+		}
+		.przyciskkoszyk{
+			color:#ff5a00;
+			font-size:24px;
+			text-align:center;
+			padding-left:10px;
+			width: 100%;
+		}
+		.fa-cart-arrow-down{
+			color:#b6b9be!important;
+		}
+		.fa-cart-arrow-down:hover{
+			color:black !important;
+		}
+		.fa-user{
+			color:#b6b9be!important;
+		}
+		.fa-user:hover{
+			color:black!important;
+		}
+		.przyciskinavbar:focus {
+			outline: none;
+            box-shadow: none;
+		}
+
+        .asddd {
+            border-bottom-color: #dadad6;
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+            height: 100%;
+        }
+
+
+        .sortowanie {
+            font-size: 13px;
+            padding-top: 7px;
+            font-weight: 500;
+            color: #676566;
+        }
+
+        .znaczekwsort {
+            color: #FF5A00;
+            font-size: 15px;
+        }
+
+        .tomash {
+            list-style: none;
+            text-align: center;
+            display: inline-block;
+        }@charset "UTF-8";
+.simpleCart_items img {
+            max-width: 42px;
+            max-height: 42px;
+        }
+
+        .simpleCart_items {
+            overflow: auto;
+        }
+
+        .simpleCart_shelfItem {
+
+        }
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .przyciskisortowania {
+
+        }
+
+        body {
+            min-width: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: #ecece8;
+        }
+
+        .szer {
+            width: 100%;
+        }
+
+        .small {
+			margin-top: -8px;
+			color: #aaaaa6;
+			font-size:15px;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        .item {
+            width: 50%;
+        }
+
+
+        .itt {
+            padding: 20px;
+            transition: all .3s;
+            -webkit-transition: all .3s;
+        }
+
+        .itt:hover {
+            transform: scale(1.05);
+            -ms-transform: scale(1.05);
+            -webkit-transform: scale(1.05);
+            box-shadow: 0px 0px 13px #888;
+        }
+
+		
+		.przyciskkoszyk:hover {
+			color:#ff5a00;
+		}
+		
+		.fa-user {
+			font-size:20px;
+			color:white;
+		}
+		.napiswlogowaniu {
+			font-size:27px;
+			color:white;
+		}
+		
+
+		.logowanieprzycisk:hover {
+			color:white;
+		}
+		.logowanieprzycisk:focus {
+			outline: none;
+            box-shadow: none;
+		}
+		.przyciskkoszyk:focus {
+			outline: none;
+            box-shadow: none;
+		}
+
+        .testowa {
+            font-size: 10px;
+        }
+
+        .szerbutton {
+            width: 100%;
+        }
+
+        .btn-primary {
+            background-color: #ff5a00;
+            border-color: #ff5a00;
+        }
+
+        .btn-primary:focus {
+            outline: none;
+            box-shadow: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #9d4100;
+            border-color: #9d4100;
+        }
+
+        .price {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .navbar {
+            border-bottom-color: #b2b2ae;
+            border-bottom-width: 0px;
+            border-bottom-style: solid;
+			top: 0;
+			z-index:5;
+			padding: 0;
+			background-color: white;
+
+
+        }
+
+        .navbar-brand {
+            color: #ff5a00 !important;
+            font-size: 20px;
+            font-weight: bold;
+            padding-left: 5px;
+			padding-bottom:0px;
+
+
+        }
+		.navbar-brand:hover{
+			color:#a53a00 !important;
+		}
+		
+
+        .navbar-right {
+            padding-right: 60px;
+        }
+
+        .napisymenuzlewej {
+            color: #676566;
+            font-size: 15px;
+            font-weight: 500;
+            padding-left: 45px;
+            padding-top: 4px;
+
+        }
+
+        .napisymenuzlewej:hover {
+            color: #ff5a00;
+        }
+
+        .tekstsortowanie {
+            font-size: 13px;
+            font-weight: 500;
+            color: #676566;
+            padding-top: 13px;
+        }
+
+        .przyciskisortowania {
+            padding-top: 5px;
+            background-color: #FFFFFF;
+            border: 0;
+            font-size: 13px;
+            font-weight: 500;
+            color: #676566;
+        }
+
+        .przyciskisortowania:hover {
+            background-color: #FFFFFF;
+            border: 0;
+            font-size: 13px;
+            font-weight: 500;
+            color: #FF5A00;
+        }
+
+        .przyciskisortowania:focus {
+            outline: none;
+            box-shadow: none
+        }
+
+        .btn-group-1 {
+            width: 104%;
+            border-bottom-color: #dadad6;
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+            border-top-color: #dadad6;
+            border-top-width: 1px;
+            border-top-style: solid;
+        }
+
+        .btn-group-1:hover {
+            color: #FF5A00 !important;
+            border-color: rgba(255, 90, 0, 0.35);
+        }
+
+        .btn-group-1:focus {
+            outline: none;
+            box-shadow: none;
+            background-color: #cae6f0;
+        }
+
+        .fa-angle-down {
+            font-size: 20px;
+            color: #FF5A00;
+        }
+
+        .fa-angle-up {
+            font-size: 20px;
+            color: #676566;
+        }
+
+        .napisywbocznymmenuwysuwanym {
+            font-size: 16px;
+            color: #676566;
+            padding-bottom: 20px;
+        }
+
+        .asd {
+            padding-right: 15px;
+        }
+        .toglerikona {
+        	outline: none !important;
+            box-shadow: none !important;
+        }
+
+
+        .asdd {
+            padding-right: 14px;
+        }
+		.przyciskinavbar {
+			color:#b6b9be;
+			font-weight:700;
+			font-size:18px;
+			text-align:center;
+			padding-left:10px;
+		}
+		.przyciskinavbar:hover {
+			color:black;
+		}
+		.collapsednavbarcss{
+			width: 100%;
+			color: white;
+			padding-left:50px;
+		}
+		.collapsednavbarcss1{
+			width: 100%;
+			color: white;
+			 border-top-color: #b6b9be;
+            border-top-width: 1px;
+            border-top-style: solid;
+			
+		}
+		.szukajcss{
+			width: 50%;
+			padding-left: 25px;
+		}
+		.szukajcss1{
+			width: 100%;
+			padding-left:20%;
+		}
+		.szukajform{
+			width: 100%;
+		}
+		.szukajform1{
+			width: 80%;
+		}
+		.koszykcss{
+			padding-left: 40px;
+			padding-right: 0px;
+		}
+		.koszykcss1{
+
+		}
+		.logowaniecss{
+			padding-left: 45px;
+			width: 10%;
+		}
+		.logowaniecss1{
+
+		}
+		.logowanieprzycisk {
+			color:#b6b9be;
+			font-weight:700;
+			font-size:15px;
+			text-align:center;
+			padding-left:20px;
+			width: 100%;
+			
+		}
+		.przyciskkoszyk{
+			color:white;
+			font-size:24px;
+			text-align:center;
+			padding-left:10px;
+			width: 100%;
+		}
+		przyciskkoszyk:hover{
+			color:#b6b9be!important;
+		}
+		.przyciskinavbar:focus {
+			outline: none;
+            box-shadow: none;
+		}
+
+        .asddd {
+            margin-left:-31px;
+            border-bottom-color: #dadad6;
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+            height: 100%;
+        }
+
+
+        .sortowanie {
+            font-size: 13px;
+            padding-top: 7px;
+            font-weight: 500;
+            color: #676566;
+        }
+
+        .znaczekwsort {
+            color: #FF5A00;
+            font-size: 15px;
+        }
+
+        .tomash {
+            list-style: none;
+            text-align: center;
+            display: inline-block;
+        }

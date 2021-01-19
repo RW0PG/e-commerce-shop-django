@@ -1,0 +1,43 @@
+@charset "UTF-8";
+.tytul {
+	font-family: 'Aclonica';
+	font-size: 10px;
+	font-weight: 800;
+	margin-top: -10px;
+	color: black;
+}
+
+.ugory {
+	background-color: #febedb;
+	font-size: 15px;
+	font-weight: 800;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: white;
+}
+
+.brand {
+	padding-top: 15px;
+	padding-bottom: 35px;
+	font-family: 'Abel';
+	font-size: 50px;
+	font-weight: 800;
+	color: black;
+}
+
+.menuugory {
+	font-weight: 500;
+	font-size: 16px;
+}
+
+.menuugory:focus {
+	outline: none;
+	box-shadow: none;
+}
+
+.menuugory:hover {
+	border-bottom-color: black;
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+}
+
